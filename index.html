@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mustaqil ish</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-menu">
+            <a class="brand" href="#">Mustaqil ish</a>
+            <div class="menu_btn"></div>
+            <ul class="navigation">
+                <li>
+                    <a class="nav_link" href="#reja_list">Plan</a>
+
+                </li>
+                <li>
+                    <a class="nav_link" href="./photo.html">Information</a>
+                </li>
+                <li class="photos">
+                    <a class="nav_link"
+                        href="https://www.google.com/search?q=tojikiston+mezolit+davri+foto&rlz=1C5CHFA_enUZ1026UZ1027&sxsrf=APwXEddFgPZaa7ocxYK3YKZV-PxkX_r9gA:1683360954964&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7_f6doOD-AhUDR_EDHT4pBHEQ_AUoAXoECAEQAw&biw=1440&bih=789&dpr=1">Photos</a>
+                    <i class="fa-solid fa-image"></i>
+                </li>
+                <li class="link">
+                    <a target="_blank"
+                        href="https://studylib.net/doc/25660669/ibragimov-r.-z.-markaziy-osiyo-arxeologiyasi"><button
+                            class="btn">Enter</button></a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
+
+        <div class="container">
+            <div class="reja">
+                <div id="reja_list">
+                    <h2 class="section_menu">Reja:</h2>
+                    <div class="animated-text">
+                        <h3>1-Mezolit davri</h3>
+                        <h3>2-Qozog'iston va Tojikistonda Mezolit davri</h3>
+                        <h3>3-Mezolit davri manzilgohlari</h3>
+                    </div>
+                    <a target="_blank" href="./adabiyotlar.html"><button class="btn-2">Adabiyotlar</button></a>
+                </div>
+
+                <div class="globus">
+                    <canvas id="cobe" width="1000" height="1000"></canvas>
+
+                    <script type="module">
+
+                        import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+                        let phi = 0
+                        let canvas = document.getElementById("cobe")
+
+                        const globe = createGlobe(canvas, {
+                            devicePixelRatio: 2,
+                            width: 1000,
+                            height: 1000,
+                            phi: 0,
+                            theta: 0,
+                            dark: 0,
+                            diffuse: 1.2,
+                            scale: 1,
+                            mapSamples: 16000,
+                            mapBrightness: 6,
+                            baseColor: [1, 1, 1],
+                            markerColor: [1, 0.5, 1],
+                            glowColor: [1, 1, 1],
+                            offset: [0, 0],
+                            markers: [
+                                { location: [37.7595, -122.4367], size: 0.03 },
+                                { location: [40.7128, -74.006], size: 0.1 },
+                            ],
+                            onRender: (state) => {
+                                // Called on every animation frame.
+                                // `state` will be an empty object, return updated params.
+                                state.phi = phi
+                                phi += 0.01
+                            },
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="section-3">
+        <div class="container text">
+            <p class="section-3_text">Mezolit paleolit davridan keyingi davr bo`lib, u miloddan avvalgi 12-7 ming
+                yilliklarni o`z ichiga oladi. Muzlik davrining tugashi paleolitning ob-havosiga nisbatan issiqroq
+                iqlimni shakllantirdi. Flora va fauna dunyosi ham bir oz hozirgi hayvonot va o`simliklar dunyosiga
+                yaqinlashdi.</p>
+            <p> Mezolit termini yunoncha «mezos» - o`rta va «litos» - tosh degan so`zlardan kelib chiqqan. Mezolit davri
+                XIX asrning oxirlarida fanga ma`lum bo`ldi. Mazkur davrga mansub bo`lgan dastlabki yodgorlik 1887 yilda
+                frantsuz arxeologi D.P`et tomonidan Maz.d. Azil g`oridan topilgan va o`rganilgan.</p>
+            <p> Mezolit davrining xususiyati, chegarasi va atalishi haqida arxeologlar orasida hozirgacha qizg`in
+                baxslar mavjud. Bir guruh olimlar bu davrga qadimgi tosh asrining alohida bosqichi sifatida qarasalar,
+                boshqalari tosh asridan so`nggi bosqichi deb biladilar. Ammo keyingi tadqiqotlar tosh qurollar shakli,
+                qo`llanilishi va ishlash texnikasidagi o`zgarishlar va yangi xususiyatlarni aniqlashi natijasida tosh
+                davrining o`rta bosqichi ekanligi e`tirof etildi.</p>
+
+            <p> Mezolit davrining quyi va yuqori chegarasini belgilashda ham turli fikr va mulohazalar mavjud. Ko`pgina
+                olimlar mezolit davrining chegarasini aniqlashda geografik muhitga suyansa, boshqalari toshni ishlash
+                texnikasiga asoslanadilar. Uchinchi guruh olimlar esa bu masalada ho`jalik mashg`ulotlarini birinchi
+                o`ringa qo`yadilar.</p>
+
+            <p> Mezolit davri tabiiy sharoiti muzlikning erishi bilan o`zgardi. Muzlikning shimolga chekinishi
+                natijasida ko`plab ko`llar, o`simliklar o`sishi uchun yaroqli erlar, botqoqliklar ko`paydi. Dastlabki
+                bosqichda ya`ni 100 000-85000 yillar davomida iqlim subtropik bo`lib, poleolitga ancha yaqin edi.
+                Keyinchalik miloddan avvalgi 85000-50000 yillar davomida issiq va quruq iqlim shakllana boshladi.
+                Janubda iqlim yaxshilanib, bu paytda ko`plab shoxli hayvonlar va yashil o`simliklar tarqaldi. Evropa
+                hududida esa keng bargli yashil o`rmonlar bilan qoplandi. Bu davrda Boltiq dengizi va Shimoliy Evropa
+                ko`llari hozirgi qiyofaga keladi. Muzlik siljishi (Muzlik yiliga taxminan 160 metr siljigan.) bilan
+                odamlar ham shimol tomon harakat qiladi.
+            </p>
+
+            <p>Mezolit davriga kelib O`rta Osiyoda sigment, trapetsiya va uchburchak shaklidagi mayda qurolchalar –
+                mikrolitlar paydo bo`ladi. Bu qurollardan odamlar kesish va o`rish maqsadlarida, pichoq va o`roq
+                sifatida keng foydalanganlar. Mezolit davrining eng katta kashfiyoti va yutuqlaridan biri – kamalak va
+                o`qning kashf etilishi edi. Kamalak va o`q-inson kashf etgan eng dastlabki murakkab moslama bo`lib, u
+                insoniyatning uzoq davom etgan mehnat tajribasi va zakovatining natijasi bo`ldi. O`q yoyning kashf
+                etilishi mezolit davri ishlab chiqaruvchi kuchlarining o`ziga xos inqilobi edi. Avval otiladigan
+                (uloqtiriladigan) qurollar ishlatilar edi. U ma`lum ma`noda jismoniy kuch talab etgan. Yangi sharoitda
+                esa ming yillar davomida shakllangan ov madaniyati o`zgaradi. Ov ob`ekti ham shunga mos holda o`zgarishi
+                tufayli yangi qurolga ehtiyoj sezila boshlaydi. Mezolit davrida kichik hayvonlarning tarqalishi ov
+                usulining o`zgarishiga olib keladi. O`q-yoyning paydo bo`lishi ishlab-chiqarish kuchlarining
+                rivojlanishini taqozo etib, quyidagi xususiyatlar bilan bog`liq edi:</p>
+            <p> - fizik qonuniyat-o`qning tezligi-kinetik kuch (energiya)ni idrok etish uzoq yillik malaka va ko`nikma
+                taqozasi; insonning (kashf etilishi bilan) birinchi marta kinetik energiyadan maxsus asbob yordamida
+                foydalanishi;</p>
+
+            <p> - aqlning rivojlanishi (hayvonlarni orqasidan quvib, chuqurga xaydash emas, balki ularni o`q-yoy otib
+                ovlash) va faoliyatning ongliligi;</p>
+
+            <p> - itni qo`lga o`rgatilishi;</p>
+
+            <p> - mezolitda ovchilik ho`jaligi bilan birga baliqchilik va terimchilik mashg`ulotlarini ham o`z
+                ahamiyatini yo`qotmagan ekanligi;</p>
+
+            <p> - ovchilikda individual harakatlarning ko`zga tashlanish (it bilan ov qilish, tuzoq qo`yish, . . .);
+            </p>
+
+            <p>-baliqchilikda – garpunlar, to`rlar bilan, qarmoqlar bilan ov qilish usullarining paydo bo`lishi . . .
+            </p>
+
+            <p> Mezolit davri dunyoning hamma qit`alarida hali qadam bosilmagan joylarni o`zlashtirish davridir. Bu
+                davrda odam yashaydigan hududlar chegarasi kengayib borgan. Mezolit davrida urug` a`zolarining kollektiv
+                mehnati, o`zaro yordamlari ov va baliqchilikning zaruriy sharti bo`lgan. Tosh qurollar va o`q-yoy bilan
+                tabiat kuchlari va yirtqich hayvonlarga qarshi yakka holda kurashib bo`lmas edi. Kishilar ochdan
+                o`lmaslik, yirtqich hayvonlarga em bo`lmaslik yoki qo`shni jamoalar qo`lida halok bo`lmaslik uchun ov
+                qilish, o`rmonda meva yig`ish, baliq ovlash ishlarini birgalashib bajarishga majbur edilar.</p>
+
+            <p> Kamondan foydalanish ov unumdorligini oshirishi, ho`jalikning yangi shakllarini vujudga keltirishi lozim
+                edi. Shunday bo`ldi ham, natijada:</p>
+
+            <p> -iste`moldan ancha ortiq o`lja topila boshladi;</p>
+            <p> -yarador hayvonlar, tirik hayvon bolalari paydo bo`ldi va ular oziq-ovqat zahirasi sifatida g`amlandi;
+
+                -hayvonlar birin ketin qo`lga o`rgatila boshlandi.</p>
+
+            <p> Mezolit davri bosqichlari va yodgorliklarini Evropa va Markaziy Osiyo xususan, O`zbekiston moddiy
+                madaniyat o`rganilishi misolida ko`rib chiqamiz. Evropada mezolit davri 2 bosqichga bo`lib o`rganiladi:
+            </p>
+
+            <p>1. Ilk mezolit – azill.</p>
+
+            <p>2. So`nggi mezolit –terdenauz.</p>
+
+            <p> Bu davrlar Frantsiya hududlarida dastlab topilgan va o`rganilgan mezolit makonlari nomi bilan ataladi.
+                Azil davrining tosh qurollarida madlen tipi saqlanib qolgan. Azilliklar madlenliklarning vorislari
+                hisoblanadi. Azilda o`ziga xos, qalamtarosh tig`iga o`xshash maxsus o`tkir tosh parrakchalari keng
+                tarqalgan. Bu davrning asosiy quroli mayda chaqmoqtosh qurollar – mikrolitlar hisoblanadi. Mikrolit
+                (mikros-kichik, litos-tosh)qurollarning aksariyati o`q uchi vazifasini bajarib, asosan tol bargi
+                shaklida bo`lgan.</p>
+
+            <p>Tardenauz makonlarida ham mikrolitlar uchraydi. Ammo bu makonlardagi chaqmoqtosh parchalari juda mayda-
+                1-2 sm ni tashkil etadi. Ular turli xil geometrik shaklda bo`lib, chaqmoqtosh bo`lagidan ezgich bilan
+                urib hosil qilingan (uchburchak, romb, trapetsiya . . . shaklida).</p>
+
+            <p>Mikrolitlar o`q uchlari (tayoq uchidagi yoriqlarga joylashtirilib qotirilgan), qadamalar (suyak yoki
+                yog`och qurolga qator qilib qadalgan chaqmoqtosh parchalari tizmasi) sifatida ishlatilgan.</p>
+
+            <p> Mezolit davri makonlari arxeologlar tomonidan keng o`rganilgan. Er yuzining turli nuqtalaridan mezolit
+                davri yodgorliklari topilgan. Masalan, Frantsiyada (Maz-d Azil`), MDH hududlarida-Qrimda (Murzak Koba,
+                Zagin` Koba...), Volga bo`ylarida (Sobolevo, Sknyatino qishloqlari), Oka daryosi bo`ylari, Ural, Boltiq
+                bo`yi hududlarida ko`plab mezolit makonlari tadqiq etilgan.</p>
+
+            <p>O`rta Osiyo hudularida ham mezolit davrida haroratning ko`tarilishi natijasida hayvonot olami va
+                o`simliklar dunyosida o`zgarishlar yuz beradi. Qadimgi tosh asrining yirik hayvonlari asta-sekin
+                yo`qolib, ular o`rniga arxar, muflon, tog` echkilari, bug`u, jayron, saygoq, arslon,... kabi hayvonlar
+                ko`paya boshladi. Shuningdek, O`rta Osiyoda issiqtalab o`simliklar – yovvoyi boshoqli o`simliklar va
+                daraxtlar ko`paya boshladi. Tabiatdagi bu o`zgarishlar odamlarining turmush tarziga ham ta`sir etdi.. Bu
+                davrda odamlar Pomir, Tyanshan` tog`lari yon bag`irlarida, Kaspiy bo`ylarida, Markaziy Qozog`istondan
+                Turkman-Xuroson tog`larigacha bo`lgan erlarda makon quradilar. O`zbekiston hududida mezolit
+                yodgorliklari arxeolog olimlar tomonidan keng o`rganilgan. Farg`ona vodiysidagi Obishir I, Obishir V
+                g`or makonlari ahamiyatlidir. Obishir I Xaydarkon shaharchasidan 4-5 km uzoqlikda joylashgan bo`lib,
+                g`orning kengligi 25,5 m, balandligi 12 m.ni tashkil etadi. Bu erdan mikrolitlar, parrakchalar,
+                nukleuslar, bigiz, qirg`ich, pichoq-qadamalar topilgan. Obishir V makoni Obishir I g`ori yaqinida
+                joylashgan, kengligi 8 m, balandligi 10 m va chuqurligi 4-5 m. Gor 3 ta madaniy qatlamdan iborat
+                bo`lgan. Bu erdan ham pichoq-qadamalar, qirg`ichlar, teshgichlar topilgan. Moddiy manbalar ichida
+                yovvoyi hayvonlarning suyaklari ham mavjud bo`lgan. Gordan topilgan qadoq toshlar – baliq tutishda
+                ishlatilgan. Obishirliklar baliqchilik, ovchilik va terimchilik ho`jalik mashg`ulotlari bilan
+                shug`ullanganlar.</p>
+
+            <p>Mezolit davri yodgorliklaridan biri Mochay g`or makonidir. Bu yodgorlik Xisor tog` tizmasining
+                Ketmonchopti tog`ining janubiy yonbag`rida, Mochay daryosining o`ng sohilidagi Quyi va O`rta Mochay
+                qishloqlari orasida joylashgan. Gorning kengligi 20m, chuqurligi 11m, balandligi 3,5m ni tashkil etadi.
+                Mochay g`oridan bigiz, igna,... suyak va tosh qurollar topilgan (15 nusxadagi qurol turlari aniqlangan).
+                Gordan 870 ta tosh qurol – parrak, nukleuslar, tosh pichoqlar, yo`ng`ichlar–randalar, nayza, o`q uchlari
+                topib o`rganilgan. Mochay g`ori madaniy qatlamlaridan topilgan qurollar miloddan avvalgi VII-VI ming
+                yilliklarga mansub. Gorni qazish davomida antrapologik materiallar-odam bosh suyagi, tishi, jag`i,
+                boshqa a`zolari qoldiqlari topilgan. Antrapologlarning ma`lumotlariga qaraganda topilgan suyaklarning
+                biri voyaga etgan erkak, ikkinchisi ayol va uchinchisi yosh bolaniki bo`lib, ular evropoid irqiga mansub
+                bo`lgan. Madaniy qatlamlardan qalin kul qatlamlari topilgan. Kuygan suyaklardan va olov qoldiqlaridan
+                odamlar go`shtni pishirib eganlar, degan xulosaga kelish mumkin.</p>
+
+            <p> Mochay g`orida yashagan ajdodlarimiz ovchilik va qisman chorvachilik bilan shug`ullanganlar. Shu bilan
+                birga termachilik ham ularning ho`jaligida mavjud bo`lgan. Gordan topilgan suyaklar-qizil bo`ri, tulki,
+                bars, mo`ynali suvsar, to`ng`iz, jayron, Osiyo qo`yi-muflon, toshbaqa, echki va boshqa hayvonlarga
+                tegishli bo`lgan.</p>
+
+            <p>Janubiy O`zbekistonda mezolit davri yodgorligi Ayritom makoni bo`lib, u Termizdan 18 km uzoqlikda
+                joylashgan. Ayritom yodgorligi ko`p qavatli madaniy qatlamidan tosh parmalagichlar, nukleuslar, tosh
+                uchrindilar, o`q uchlari,... topilgan.</p>
+
+            <p> Farg`ona hudud ochiq-past tekisliklarida mezolit makonlari mavjud bo`lib, ular fanga «Markaziy Farg`ona
+                mezolit yodgorliklari» nomi bilan kiritilgan. Markaziy Farg`onada Ittak qal`a, Shurkul, Achchiq ko`l,
+                Yangiqadam, Bekobod, Zambar, Toypoq ko`l, Damko`l, Bosqum,... kabi mezolit davri joy-makonlari topilgan.
+                Ular 80 dan ortiq yodgorliklarni tashkil etgan bo`lib, makonlarda retushlanmagan va retushlangan ixcham
+                nukleuslar ko`plab tarqalgan. Nukleuslar siniq va mayda parraklar olish uchun ishlatilgan. Shuningdek,
+                qirg`ichlar, uchrindilar, mayda geometrik shakldagi qurollar ham (trapetsiyalar ham uchraydi) mavjud
+                bo`lgan. Markaziy Farg`ona mezolit makonlari ochiq makonlar bo`lib, ularda madaniy qatlamlar
+                saqlanmagan. Bu makonlarda yashagan mezolit qabilalari termachilik, baliqchilik va ovchilik ho`jalik
+                mashg`ulotlari bilan shug`ullangan. Markaziy Farg`ona mezoliti 2 bosqichga bo`lib o`rganiladi:</p>
+
+            <p>1. Ilk mezolit – Ittak qal`a, Achchiq ko`l-1,7; Yangiqadam-1-2; Toypoq-I, ular miloddan avvalgi IX-VII
+                ming yilliklar bilan belgilanadi.</p>
+
+            <p>
+                2. So`nggi mezolit – Achchiqko`l; Yangiqadam 2; Bekobod- 3-4; Sho`rko`l-2; Madiyor-11; Yangiqadam-22;
+                Toypoq-2; Achchiqko`l-3; Zambar-2; Toypoq - 3,5,7, makonlari ular miloddan avvalgi VII ming yilliklar
+                bilan belgilanadi.
+            </p>
+
+            <p>
+                Tojikiston Respublikasi hududlarida ham O`rta Osiyoning eng mashhur mezolit davri yodgorliklari
+                topilgan. Ulardan biri Pomir tog`ida joylashgan Oshxona makonidir. Makondan kamon o`qlari, nukleuslar,
+                parrakchalar, teshgichlar, mikrolit qurollar topilgan. Yana bir yodgorlik Chil-tor chashma makoni
+                bo`lib, u Shaxrituz rayonida joylashgan. Bu erdan sigmentlar, prizma shakldagi nukleuslar, parrakchalar
+                topilgan. Ular miloddan avvalgi 8-7 ming yilliklarga oid.
+            </p>
+
+            <p>
+                Eramizdan avvalgi XI-VI ming yillikda Kaspiy bo`ylaridan Pomir tog`larigacha, Kopetdog` etaklaridan
+                Markaziy Qozog`istongacha bo`lgan territoriyada mezolit qabilalari yashagan. Bu joylarning geografik
+                sharoiti xilma-xil bo`lgan, makonlar past tekisliklar, daryo bo`ylari va tog`li o`lkalarda joylashgan.
+                Qabilalar va urug`lar ovchilik, termachilik bilan kun kechirgan. Makonlarda xonaki hayvonlarning izlari
+                ham saqlangan bo`lib, ular chorvachilikning ilk bosqichidan dalolat beradi.
+            </p>
+
+            <div class="section-3_ifromation">
+                <h3>ADABIYOTLAR:</h3>
+
+                <ul class="section-3_list">
+                    <li>1. <span>Karimov I.A.</span> Tarixiy xotirasiz-kelajak yo`q. T., O`zbekiston, 1998.</li>
+                    <li>
+                        2. <span>Gulomov Ya.</span> O`zbekistonda arxeologiya. T.1956. 37-38 bet.
+                    </li>
+                    <li>
+                        3. <span> Al`baum L.I.</span> «Balaliktepa». Tashkent, 1960
+                    </li>
+                    <li>
+                        4. <span> Gerasimov M.</span> «Lyudi kamennogo veka». M.,1964
+                    </li>
+                    <li>
+                        5. <span> Masson V.I.</span> «Poselenie Djaytun». M., 1971
+                    </li>
+                    <li>
+                        6. <span> Mirsaotov G. </span> «Drevnie shaxti Uchtuta». T., 1973
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article class="article-2">
+        <div class="container">
+            <div class="article-2_text">
+                <h2>Qozog'istonda Mezolit davri</h2>
+                <p>
+                    Qozog'istonda 20 dan ortiq mezolit davri ma'lum. Uy-joylar yerga haydalgan ustunlardan hayvonlarning
+                    terilari bilan qoplangan holda qurilgan. Shunga oʻxshash turar joy qoldiqlari Esil (Ishim) daryosi
+                    boʻyida topilgan.</p>
+                <p>Qozog'iston hududida eramizdan avvalgi 8-asrda yaratilgan qulay iqlim. Yovvoyi hayvonlarni
+                    xonakilashtirish va ayrim oʻsimliklarni yetishtirish jarayoni mezolitning oxirida boshlangan. Qo'y,
+                    echki, sigir, cho'chqa, ot, it xonakilashtirilgan.</p>
+                <p>
+                    Qozog'iston hududida eramizdan avvalgi 8-asrda yaratilgan qulay iqlim. Yovvoyi hayvonlarni
+                    xonakilashtirish va ayrim oʻsimliklarni yetishtirish jarayoni mezolitning oxirida boshlangan. Qo'y,
+                    echki, sigir, cho'chqa, ot, it xonakilashtirilgan.
+                </p>
+                <p>
+                    Taxminan 10 000 yil oldin odamlar dehqonchilik bilan shug'ullana boshlagan. Kollektsiyaning
+                    rivojlanishi ibtidoiy dehqonchilikning paydo bo'lishiga olib keldi. Keyan, o'roq, tosh
+                    maydalagichlar bor edi. Chorvachilik ovchilikdan kelib chiqqan.
+                </p>
+                <p>
+                    Janubiy Tojikiston.Vaxsh, Kofirnigon, Panj vodiylari, hatto Pomir togining baland hududlariga qadar
+                    tarqalgan. Bu erdagi mezolit davriga oid 30 ga yaqin yodgorliklar mil.avv.XI-VIII ming yilliklar
+                    doirasida chegaralanib, alohida guruhlar va majmualarnitashkil etadi. Asosiy yodgorliklaridan
+                    Tutqovul III, Chilichorchashma, Daraisho'r, Quyibulyon, Obikiyik, Oshxona, Alichur va boshqalar.
+                    Janubiy Tojikistonning togoldi hududi aholisi asosan termachilik, ovchilik va baliqcilikbilan kun
+                    kechirishgan. Janubiy Tojikistonning mezolit davri madaniyatlari va majmualari 26xojaligi, moddiy
+                    madaniyati, xususan, tosh qurollariga ko'ra umumiy va o'ziga xos jihatlariga ega
+                </p>
+                <p>
+                    <span>Vaxsh, Kofirnigon va Panj</span> vodiylarida mezoliti.Bu erda mezolit davriga oid 20 ta
+                    yodgorlik ochilgan
+                    va tadqiq qilingan. Kopchlikjoy-makonlarning madaniy qatlamlari buzilib ketgan. Bu hududda mezolit
+                    rivojlanishi ikki yo'nalishda borgan: togoldi va tekislikda. Turli davrlarga va madaniyatlarga
+                    bo'linadigan to'rtta yodgorliklar majmuasiajralib turadi. Bu mintaqada mezolit davri mil.avv.XI-VIII
+                    ming yilliklar bilan sanalangan.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="container">
+            <div class="article-3_text">
+                <h2>Mezolit davri manzilgohlari</h2>
+                <p>
+                    Birinchi majmua:Tutqovul 3, Chilchorchashma va boshqa yodgorliklardan iborat guruh shartli ravishda
+                    Tutqovul madaniyati nomi bilan atalib, mil.avv.XI/X-VIII ming yilliklar doirasida sanalanadi.
+                </p>
+                <p>
+                    Ikkinchi majmua:Daraisho'r, Tutqovulning ikkinchi madaniy qatlami mil.avv.VIII-VII m. yilliklar
+                    bilan sanaladi. Vaxsh daryosining o'rta oqimi hududi mezolit davri Vaxsh madaniyatiga oid, deb
+                    taxmin qilinadi. Bu madaniyat an'anasi keyinchalik Tojikistonningtoglihududi ibtidoiy kishilarining
+                    neolit davri Hisor madaniyati paydo bo'lishida muhim o'rin egallaydi.
+                </p>
+                <p>
+                    Uchinchi majmua:Quyi Bulyon va Obi Kiyik (obi kiyik majmuasi). Bu makonlar uchun faqat
+                    chaqmoqtoshdan yasalgan mikrolitlar va plastinkasimon qurollar xos bo'lib, mil.avv.VIII-VII ming
+                    yillikla bilan sanalanadi.
+                </p>
+
+                <p>
+                    Uchinchi majmua:Quyi Bulyon va Obi Kiyik (obi kiyik majmuasi). Bu makonlar uchun faqat
+                    chaqmoqtoshdan yasalgan mikrolitlar va plastinkasimon qurollar xos bo'lib, mil.avv.VIII-VII ming
+                    yillikla bilan sanalanadi.
+                </p>
+                <p>
+                    Bu hududdagi madaniyat sohiblari ham o'zlashtiruvchi xojalikning ovchilik, baliqcilikva termachilik
+                    shakllari bilan kun kechirishgan. Ovchilik va baliqcilikda nayza, oq va yoydan foydalanganlar.
+                    Hayvonlardan qoy va echkilarning suyaklari topilgan. Ovchi va baliqchilar vaqtinchalik yashash uchun
+                    chaylalardan foydalanganlar yoki ochiq havoda yashashgan. Tojikistonning mezolit davri makonlarida
+                    bir vaqtda yoyilgan shimoliy Afgoniston, Falastin, Suriya va Old Osiyoning boshqa hududlaridagi
+                    manzilgohlar bilan o'xshash belgilari seziladi. Bu esa Yaqin Sharq qabilalari bilan uzoq genetik
+                    yaqinlikdan darak berishi mumkin.
+                </p>
+                <p>
+                    <span>Sharqiy Pomir</span> mezoliti.Bu mezolit davri yodgorliklari Markansuv madaniyati (Alichur va
+                    Oshxona
+                    makoni) va Issiq madaniyati yoki aniqrogi Issiq majmuasidan (Issiq gor-makoni) iborat. Pomirda
+                    mezolit davri mil.avv.VII ming yilliklarga togri keladi. Markansuv madaniyati Pomirdan tashqarida
+                    shakllangan. Uning kelib chiqish ildizi aniqlanmagan bo'lsada, tosh qurollariga ishlov berish
+                    xususiyatlari mahalliy tabiiy sharoitga bogliqligi seziladi.
+                </p>
+
+                <p>
+                    Oshxona makonida bir davrga oid uchta madaniy qatlam aniqlangan. Yirik dagal ishlangan
+                    mehnatqurollari va kichik nafis mehnatqurollari ajralib turadi. Bu erda silliq toshdan yasalgan
+                    ikkita ochoq joylashgan bo'lib, uning atrofida yashash maydonchasi aniqlangan. Bu yashash
+                    maydonchasi engil turdagi chaylasimon uylarning qoldiqi bo'lishi mumkin.Issiq gor-makonining madaniy
+                    qatlami bir yarim metr. U erdan kichik va o'rta hajmdagi toshlardan aylana qilib terilgan ochoq
+                    topilgan.
+
+                </p>
+
+                <p>
+                    27Markansuv makoni mavsumiy foydalaniladigan joy bo'lib, undan ov o'lja izlab chiqqan vaqtda yashash
+                    uchun foydalanilgan bo'lsa kerak. Markasuvliklar ovchilik bilan birgalikda terimchilik bilan kun
+                    kechirishgan
+                </p>
+                <p>
+                    O'rta Osiyodagimezolit davri madaniyatlari va majmualari o'ziga xosligi va turli xiligi bilan
+                    ajralib turadi. O'rta Osiyoning mezolit davri madaniyatlarining shakllanishida avvalambor so'nggi
+                    paleolit davri mahalliy madaniyat an'analarining davom etishdan bo'lsada, toshasrining yirik madaniy
+                    markazi hisoblangan Yaqin Sharq qabilalarining ham sezilarli ta'siri bo'lgan, degan fikrlarni
+                    quvvatlaydigan tadqiqotchilar mavjud. Lekin, bu davr sezilarli ta'sir etish quvvatiga ega bo'lgan
+                    qabilalar tolqining siljishi haqiqatdan yiroq bo'lishi, tabiiy. Tosh qurollarga ishlov berish
+                    usullarining o'xshashligi asoslanib, bunday xulosalarga kelish togri emas. Zamonaviy arxeologlar
+                    O'rta Osiyo hududida mezolit davrida xojaligi va madaniy xususiyatlari jihatdan o'zaro ajralib
+                    turadigan bir qancha qabilalar yashab, ularning izlari aniqlangan yodgorliklarda o'zining aksini
+                    topgan.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="xulosa">
+            <p>
+                Xulosa qilib shuni aytish kerakki miloddan avvalgi 12-7 ming yilliklarni o`z ichiga olgan mezolit
+                davri insoniyat rivojlanishi tarixidagi muhim davrlardan hisoblanadi. Bu davrda ibtidoiy jamoa
+                tuzumida hayot kechirgan odamlar muzlikning or³aga siljishi bilan yangi hududlarni o`zlashtirgan,
+                o`q-yoyni kashf etib, ov unimdorligini oshirgan va ehtiyojni to`laroq ta`minlash imkonini beruvchi
+                ortiqcha mahsulotlarni paydo bo`lishi uchun zamin yaratgan.
+            </p>
+        </div>
+    </footer>
+    <script src="./main.js/main.js"></script>
+
+</body>
+
+</html>
